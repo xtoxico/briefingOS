@@ -1,0 +1,187 @@
+
+
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background-color: #ececec;
+  background:linear-gradient(135deg, #000000, #191c24);
+  color: #fff;
+  /*padding: 0.5em 1em;*/
+  -webkit-font-smoothing: antialiased;
+}
+.fig {
+  font-size:10pt;
+  font-family:Monospace;/* */
+  white-space:pre;
+}
+
+.fig-ansi {
+  font-size:10pt;
+  font-family:"Courier New", Monospace;/* */
+  white-space:pre;
+}
+
+
+.console {
+  position: fixed;
+ 
+  font-size:10pt;
+  font-family:Monospace;/* */
+  white-space:pre;
+
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    -webkit-line-break: after-white-space;
+
+
+  color: #fff;
+  width: calc(100% - 3em);
+  max-width: 100%;
+  max-height: calc(100% - 3em);
+  overflow-y: auto;
+  margin: 1em 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5em;
+  box-shadow: 0 0.75em 3em rgba(50, 50, 50, 0.5);
+  z-index: 100;
+  
+
+
+
+
+}
+
+.console-input {
+  
+  font-size:10pt;
+  font-family:Monospace;/* */
+  white-space:pre;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  min-width: calc(100% - 2em);
+  resize: none;
+}
+
+.console-input:before {
+  content: '> ';
+  color: #FC3565;
+  vertical-align: top;
+}
+
+.output-cmd:before {
+  content: '> ';
+  color: #FC3565;
+  vertical-align: top;
+}
+.output-text:before {
+  content: '> ';
+  color: #5F8787;
+  
+  vertical-align: top;
+}
+
+.output-text,
+.output-cmd {
+  width: 100%;
+  display: block;
+}
+
+.console-inner {
+  padding: 0.3em 1.1em;
+}
+
+.output-text,
+.output-cmd {
+  display: block;
+  white-space: pre;
+}
+
+#outputs div {
+  opacity: 0.85;
+}
+
+#outputs div div {
+  color: #46f01d;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+#outputs a {
+  color: #46f01d;
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.console-inner .output-text#ready {
+  color: #3df5b8;
+  font-style: italic;
+  opacity: 0.75;
+}
+
+.particles-js-canvas-el {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+
+  z-index: 101; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 0% auto; /* 15% from the top and centered */
+  margin-top 20px;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+video {
+  margin: auto;
+}
